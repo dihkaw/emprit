@@ -36,8 +36,15 @@ h1 {
     justify-content: center;
     font-size: 2em;
     color: #fff;
-    background-color: #007bff;
     margin: 0 10px;
+}
+
+.player-card {
+    background-color: #007bff; /* Warna biru untuk kartu pemain */
+}
+
+.computer-card {
+    background-color: #dc3545; /* Warna merah untuk kartu komputer */
 }
 
 .hidden {
