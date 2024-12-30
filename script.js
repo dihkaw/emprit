@@ -27,7 +27,9 @@ function checkGuess(isHigh) {
     nextCardElement.innerText = nextCardValue;
     nextCardElement.classList.remove('hidden');
 
-    if ((isHigh && nextCardValue > currentCardValue) || (!isHigh && nextCardValue < currentCardValue)) {
+    if (nextCardValue === currentCardValue) {
+        resultElement.innerText = 'Hasilnya seri!';
+    } else if ((isHigh && nextCardValue > currentCardValue) || (!isHigh && nextCardValue < currentCardValue)) {
         resultElement.innerText = 'Selamat! Anda menang!';
     } else {
         resultElement.innerText = 'Sayang sekali! Anda kalah.';
