@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Angry Birds Game</title>
+    <title>High and Low Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-        <canvas id="gameCanvas"></canvas>
-        <div class="controls">
-            <button id="launchButton">Luncurkan</button>
-            <button id="resetButton">Reset</button>
+    <div class="container">
+        <h1>Permainan High and Low</h1>
+        <div class="card-container">
+            <div id="currentCard" class="card"></div>
+            <div id="nextCard" class="card hidden"></div>
         </div>
+        <div class="controls">
+            <button id="highButton">High</button>
+            <button id="lowButton">Low</button>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="restartButton" class="hidden">Main Lagi</button>
     </div>
     <script src="script.js"></script>
 </body>
