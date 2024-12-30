@@ -18,6 +18,8 @@ function startGame() {
     nextCardElement.classList.add('hidden');
     resultElement.innerText = '';
     restartButton.classList.add('hidden');
+    highButton.disabled = false; // Enable buttons
+    lowButton.disabled = false; // Enable buttons
 }
 
 function checkGuess(isHigh) {
@@ -31,9 +33,9 @@ function checkGuess(isHigh) {
         resultElement.innerText = 'Sayang sekali! Anda kalah.';
     }
 
-    highButton.disabled = true;
-    lowButton.disabled = true;
-    restartButton.classList.remove('hidden');
+    highButton.disabled = true; // Disable buttons after guess
+    lowButton.disabled = true; // Disable buttons after guess
+    restartButton.classList.remove('hidden'); // Show restart button
 }
 
 highButton.addEventListener('click', () => checkGuess(true));
